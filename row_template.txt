@@ -1,0 +1,9 @@
+@Article\{{{row.index}},
+  author    = \{{{cells["Author"].value}}},
+  title     = \{{{cells["Title"].value}}},
+  journal   = \{{{cells["Journal"].value}}},
+  year      = \{{{cells["Year"].value}}},
+  volume    = \{{{cells["volume"].value}}},
+  pages     = \{{{cells["Pages"].value}}},
+  doi       = \{{{cells["DOI"].value}}}
+    }
