@@ -1,36 +1,18 @@
 # open_refine_bibtex
 
-A Bash script that bootstraps and installs Go language in your home directory.
+This repository contains code snippets needed for templating Open Refine cleaned citation data to produce a bibtex formatted file.
 
-You need to have your C tool chain setup and installed already.
+## Usage
 
-## Example on Debian/Ubuntu/Raspbian
+Access the open refine templating option by clicking on Export (in the upper right hand portion of your screen) and clicking Templating...  Delete everything in the Prefix and Suffix fields, and copy the contents of row_template.txt into the Row Template field.  Delete everything in the Row Separator field and then press Enter to add a blank line.  You won't see the blank line in the field, but you'll get a correctly formatted file in the preview pane on the right.  Click Export and you'll get a .txt file and you can manually change the extension to .bib.
 
-```
-    sudo apt-get install build-essentials
-    ./install-golang.bash
-```
+## In Development
 
-## Mac OS X ports
-
-On a Mac you need [Mac Ports](https://www.macports.org/) and Apples' Mac Developer Tools (XCode for command line) installed.
-
-```
-    ./install-golang.bash
-```
-
-
-## After installation
-
-You'll want to set your *GOPATH* variable. I usually set it to that same as *HOME* and put this in my *.bashrc* file (or *.profile*).
-If you want to have the *go install* command work you will need to have *GOBIN* set and I often set this to *$HOME/bin*.
-
-```shell
-    #
-    # Typical Golang setup
-    #
-    export GOROOT=$HOME
-    export GOBIN=$HOME/bin
-```
-
-
+This template is very new and only supports the following Article fields:
+- Author
+- Title
+- Journal
+- Year
+- Volume
+- Pages
+- DOI
